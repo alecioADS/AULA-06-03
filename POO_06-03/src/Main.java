@@ -1,15 +1,14 @@
 import java.util.Scanner;
 
 public class Main {
-    public static boolean ehPar(int numero) {
-        return numero % 2 == 0;
+    public static String inverterString(String texto) {
+        return new StringBuilder(texto).reverse().toString();
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Digite um número inteiro: ");
-        int num = scanner.nextInt();
-        System.out.println("O número " + num + " é par? " + ehPar(num));
-
+        System.out.println("Digite um texto ou palavra: ");
+        String texto = scanner.nextLine();
+        System.out.println("Texto ou palavra invertido: " + inverterString(texto));
     }
 }
